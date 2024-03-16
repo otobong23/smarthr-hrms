@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: rgb(0, 0, 0);
+  --background-primary: #263238;
+  --light: rgba(255,255,255, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-primary: #263238;
+  }
+}
+
+body{
+  background: var(--background-primary);
+}
+
+@media (min-width: 768px){
+  .card2{
+    border-radius: 0;
+  }
+  .card2:first-child{
+    border-top-left-radius: 0.357rem;
+    border-bottom-left-radius: 0.357rem;
+  }
+  .card2:last-child{
+    border-top-right-radius: 0.357rem;
+    border-bottom-right-radius: 0.357rem;
+  }
+}
+
